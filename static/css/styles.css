@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#hero {
+    background-color: #1e90ff;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#about, #services, #projects {
+    margin: 50px 0;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+#contact {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #1e90ff;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin: 15px 0;
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.contact-list img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.contact-list a:hover {
+    color: #1e90ff;
+}
+
+
+/* Style pour le menu */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    padding-top: 20px;
+    display: none;
+    z-index: 1;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.sidebar-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar-menu li a:hover {
+    background-color: #575757;
+    display: block;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+.hamburger .bar {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 3px 0;
+}
+
+/* Style pour le contenu principal */
+main {
+    margin-left: 0;
+    padding: 20px;
+}
+
+section {
+    margin: 50px 0;
+}
+
+h2 {
+    color: #1e90ff;
+}
+
+/* Contact section styles */
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin: 15px 0;
+}
+
+.contact-list img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: block;
+    }
+}

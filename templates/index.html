@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section id="hero">
+    <div class="hero-text">
+        <h1>Je suis Data Scientist & Machine Learning Engineer</h1>
+        <p>Je vous aide à tirer parti des données pour des décisions éclairées et des solutions automatisées.</p>
+    </div>
+</section>
+
+<section id="about">
+    <h2>À propos de moi</h2>
+    <img src="{{ url_for('static', filename='img/erico.jpeg') }}" alt="Profile Picture" class="profile-img">
+    <p>Je suis un Data Scientist expérimenté avec un fort background en Machine Learning, Deep Learning et ingénierie des données. J'offre des services pour les entreprises et les clients individuels dans la création de solutions basées sur les données, notamment :</p>
+</section>
+
+<section id="services">
+    <h2>Services</h2>
+    <ul>
+        <li>Analyse de données et visualisation</li>
+        <li>Modélisation de Machine Learning</li>
+        <li>Détection d'anomalies</li>
+        <li>Développement d'API et intégration</li>
+        <li>Consultation en Data Science</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projets</h2>
+    <ul>
+        <li><strong>Détection de maladies des plantes</strong> : Un modèle de classification utilisant EfficientNet-B7.</li>
+        <li><strong>Système de recommandation</strong> : Création d'un système de recommandation pour une plateforme e-commerce.</li>
+        <li><strong>Analyse prédictive</strong> : Prédiction des ventes à l'aide de modèles de régression et de séries temporelles.</li>
+    </ul>
+</section>
+
+<section id="news">
+    <h2>Actualités</h2>
+    <h3>Actualités du monde</h3>
+    <p>Découvrez les dernières actualités mondiales sur :</p>
+    <ul>
+        <li><a href="https://www.bbc.com/news" target="_blank">BBC News</a></li>
+        <li><a href="https://www.cnn.com" target="_blank">CNN</a></li>
+        <li><a href="https://www.lemonde.fr" target="_blank">Le Monde</a></li>
+    </ul>
+
+    <h3>Actualités en Data Science et Machine Learning</h3>
+    <p>Voici quelques ressources pour rester à jour sur les tendances en Data Science et Machine Learning :</p>
+    <ul>
+        <li><a href="https://towardsdatascience.com" target="_blank">Towards Data Science</a> - Articles et tutoriels sur la Data Science</li>
+        <li><a href="https://www.kdnuggets.com" target="_blank">KDnuggets</a> - Actualités, tendances et conseils en Data Science et IA</li>
+        <li><a href="https://www.analyticsvidhya.com" target="_blank">Analytics Vidhya</a> - Tutoriels et compétitions en Machine Learning</li>
+        <li><a href="https://arxiv.org/list/cs.LG/recent" target="_blank">ArXiv - Machine Learning</a> - Publications récentes en Machine Learning</li>
+    </ul>
+
+    <h3>Besoins actuels dans la Data Science</h3>
+    <p>Les entreprises recherchent des compétences spécifiques dans le domaine de la Data Science :</p>
+    <ul>
+        <li>Expertise en traitement du langage naturel (NLP)</li>
+        <li>Expérience en ingénierie des données et big data</li>
+        <li>Connaissances approfondies en deep learning et réseaux de neurones</li>
+        <li>Développement d'API pour l'intégration des solutions de machine learning</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contactez-moi</h2>
+    <p>Vous pouvez me contacter via :</p>
+    <ul class="contact-list">
+        <li><a href="mailto:votremail@example.com"><img src="{{ url_for('static', filename='img/email.png') }}" alt="Email"> Email</a></li>
+    </ul>
+</section>
+{% endblock %}
